@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form LAS</title>
+        <style>
+            .container {
+                width: 90%;
+                max-width: 1000px;
+                margin: 10rem auto;
+                font-family: sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Form LAS:</h2>
+            <script src="//app-ab27.marketo.com/js/forms2/js/forms2.min.js"></script>
+            <script>
+                MktoForms2.loadForm("//app-ab27.marketo.com", "183-WCT-620", 31235, function (form) {
+                    document.querySelector("input[name='leadSourceLastDCG']").value = "DCG_24FY_WW_ALL_BRND_ALNC_NONE_CTM_NOID_AllianceLP Microsoft ContactMe"
+                    document.querySelector("input[name='leadSourceLast']").value = "DCG_24FY_WW_ALL_BRND_ALNC_NONE_CTM_NOID_AllianceLP Microsoft ContactMe"
+                    document.querySelector("input[name='sourceCampaign']").value = "DCG_24FY_WW_ALL_BRND_ALNC_NONE_CTM_NOID_AllianceLP Microsoft ContactMe"
+                })
+            </script>
+            <form id="mktoForm_31235"></form>
+        </div>
+    </body>
+</html>
